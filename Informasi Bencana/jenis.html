@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jenis Bencana - Siaga Bencana</title>
+   
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+     
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fcfcfc; 
+        }
+        
+        .pink-soft {
+            background-color: #fde0e7; 
+        }
+        .text-pink-primary {
+            color: #d85c83; 
+        }
+        .bg-gray-soft {
+            background-color: #f4f4f5; 
+        }
+        .header-bg {
+            background-color: #e5e7eb; 
+        }
+       
+        .card, .nav-item {
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    
+    <header class="header-bg shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+             
+                <a href="home.html" class="text-xl font-extrabold text-pink-primary tracking-wider">
+                    Siaga Bencana
+                </a>
+                
+           
+                <nav class="hidden md:flex space-x-4">
+                    <a href="home.html" class="nav-item text-gray-700 hover:text-pink-primary px-3 py-2 rounded-lg font-medium">Beranda</a>
+                    <a href="jenis.html" class="nav-item text-gray-700 hover:text-pink-primary px-3 py-2 rounded-lg font-medium border-b-2 border-pink-primary">Jenis Bencana</a> <!-- Active -->
+                    <a href="mitigasi.html" class="nav-item text-gray-700 hover:text-pink-primary px-3 py-2 rounded-lg font-medium">Mitigasi</a>
+                    <a href="peringatan.html" class="nav-item text-gray-700 hover:text-pink-primary px-3 py-2 rounded-lg font-medium">Peringatan Dini</a>
+                    <a href="bantuan.html" class="nav-item text-gray-700 hover:text-pink-primary px-3 py-2 rounded-lg font-medium">Bantuan & Donasi</a>
+                    <a href="kontak.html" class="nav-item bg-pink-primary text-white hover:bg-pink-600 px-3 py-2 rounded-lg font-medium shadow-md">Kontak Kami</a>
+                </nav>
+
+             
+                <button id="mobile-menu-btn" class="md:hidden text-gray-700 hover:text-pink-primary focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </div>
+
+      
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-soft pb-2">
+            <a href="home.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-200 hover:text-pink-primary">Beranda</a>
+            <a href="jenis.html" class="block px-3 py-2 rounded-md text-base font-medium text-pink-primary bg-gray-200">Jenis Bencana</a>
+            <a href="mitigasi.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-200 hover:text-pink-primary">Mitigasi</a>
+            <a href="peringatan.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-200 hover:text-pink-primary">Peringatan Dini</a>
+            <a href="bantuan.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-200 hover:text-pink-primary">Bantuan & Donasi</a>
+            <a href="kontak.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-200 hover:text-pink-primary">Kontak Kami</a>
+        </div>
+    </header>
+
+  
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+
+       
+        <section id="jenis" class="page-content">
+            <h1 class="text-4xl font-bold text-pink-700 mb-8 border-b-2 border-pink-100 pb-2">Mengenal Jenis-jenis Bencana Alam</h1>
+            
+            <div class="space-y-6">
+               
+                <div class="md:flex md:items-center bg-white p-6 rounded-xl shadow-lg card">
+                    <div class="md:w-1/3 text-center md:text-left mb-4 md:mb-0">
+                        <span class="text-6xl">🌊</span>
+                        <h2 class="text-2xl font-bold text-pink-primary mt-2">Banjir</h2>
+                    </div>
+                    <div class="md:w-2/3 md:pl-8">
+                        <p class="text-gray-700 mb-3">Kenaikan debit air yang meluap dan merendam daratan. Di Indonesia, banjir sering disebabkan oleh curah hujan tinggi, rusaknya daerah resapan, dan penebangan liar.</p>
+                        <ul class="list-disc list-inside text-sm text-gray-600 bg-gray-soft p-3 rounded-lg">
+                            <li>**Sebelum:** Bersihkan saluran air, siapkan perahu karet (jika perlu).</li>
+                            <li>**Saat:** Segera pindah ke tempat lebih tinggi, matikan listrik.</li>
+                            <li>**Setelah:** Waspadai penyakit pasca-banjir, bersihkan lingkungan.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                
+                <div class="md:flex md:items-center bg-white p-6 rounded-xl shadow-lg card">
+                    <div class="md:w-1/3 text-center md:text-left mb-4 md:mb-0">
+                        <span class="text-6xl">🌎</span>
+                        <h2 class="text-2xl font-bold text-pink-primary mt-2">Gempa Bumi</h2>
+                    </div>
+                    <div class="md:w-2/3 md:pl-8">
+                        <p class="text-gray-700 mb-3">Getaran yang terjadi di permukaan bumi akibat pelepasan energi dari bawah permukaan. Indonesia rawan karena berada di jalur cincin api Pasifik.</p>
+                        <ul class="list-disc list-inside text-sm text-gray-600 bg-gray-soft p-3 rounded-lg">
+                            <li>**Saat di dalam:** Lindungi kepala, berlindung di bawah meja kokoh (Drop, Cover, Hold On).</li>
+                            <li>**Saat di luar:** Jauhi bangunan, pohon, dan tiang listrik.</li>
+                            <li>**Pasca:** Waspadai gempa susulan, periksa kerusakan.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+              
+                <div class="md:flex md:items-center bg-white p-6 rounded-xl shadow-lg card">
+                    <div class="md:w-1/3 text-center md:text-left mb-4 md:mb-0">
+                        <span class="text-6xl">🌊🌪️</span>
+                        <h2 class="text-2xl font-bold text-pink-primary mt-2">Tsunami</h2>
+                    </div>
+                    <div class="md:w-2/3 md:pl-8">
+                        <p class="text-gray-700 mb-3">Gelombang laut besar yang dipicu oleh gempa bawah laut atau letusan gunung berapi. Tanda utamanya adalah air laut tiba-tiba surut secara drastis.</p>
+                        <ul class="list-disc list-inside text-sm text-gray-600 bg-gray-soft p-3 rounded-lg">
+                            <li>**Kunci:** Jika merasakan gempa besar dan berada di pantai, segera lari ke dataran tinggi.</li>
+                            <li>**Setelah:** Jangan kembali ke pantai sebelum ada pengumuman resmi aman.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+  
+    <footer class="bg-gray-soft mt-12 py-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-600">
+            <p>&copy; 2024 Siaga Bencana. Semua hak dilindungi. Desain oleh Gemini AI.</p>
+        </div>
+    </footer>
+
+    
+    <script>
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>
